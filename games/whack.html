@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>打地鼠 · 小虎鲸的游戏屋</title>
+<link rel="stylesheet" href="../style.css?v=20261123g">
+</head>
+<body class="paw-page" style="--accent: var(--whack)">
+<div class="bubbles" id="bubbles"></div>
+<div class="paw-cursor" id="paw"><img src="../assets/cursor-paw.svg" alt=""></div>
+
+<div class="game-page">
+  <div class="topbar">
+    <a class="back" href="../index.html">← 回游戏屋</a>
+    <div class="hud" id="hud">
+      <span>分数 <b id="hud-score">0</b></span>
+      <span>连击 <b id="hud-combo">0</b></span>
+      <span>漏 <b id="hud-miss">0</b>/3</span>
+      <span><b id="hud-time">60</b>s</span>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="whack-wrap" id="whack-wrap">
+      <div class="whack-bg"></div>
+      <div class="whack-board" id="board"></div>
+
+      <!-- 选难度 -->
+      <div class="fish-overlay" id="view-modes">
+        <h2>打地鼠</h2>
+        <p class="note">冒头就敲 · 每局 60 秒</p>
+        <div class="mode-list" id="mode-list"></div>
+        <p class="fish-best">最高分 <b id="best-score">0</b></p>
+      </div>
+
+      <!-- 结束 -->
+      <div class="fish-end" id="over-overlay" hidden>
+        <div class="fish-end-bg" id="over-bg"></div>
+        <div class="fish-end-card">
+          <h2 id="over-title">时间到！</h2>
+          <p class="fish-end-line" id="over-line"></p>
+          <p class="fish-end-stats" id="over-note"></p>
+          <div class="actions">
+            <button class="btn primary" id="btn-again">再来一局</button>
+            <button class="btn" id="btn-to-modes">换一局</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="legal">
+  <p>画作版权归白墙所有，不得商用、不得二次发布</p>
+  <p>非官方同人作品，与深度求索无隶属关系</p>
+</footer>
+
+<script src="../js/bubbles.js?v=20261123g"></script>
+<script src="../js/whack.js?v=20261123g"></script>
+</body>
+</html>
+
+
+
+
+

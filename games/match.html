@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>消消乐 · 小虎鲸的游戏屋</title>
+<link rel="stylesheet" href="../style.css?v=20261123g">
+</head>
+<body style="--accent: #7ed07a">
+<div class="bubbles" id="bubbles"></div>
+
+<div class="game-page">
+  <div class="topbar">
+    <a class="back" href="../index.html">← 回游戏屋</a>
+    <div class="hud" id="hud">
+      <span>分数 <b id="hud-score">0</b> / <b id="hud-goal">1000</b></span>
+      <span>步数 <b id="hud-moves">25</b></span>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="match-wrap" id="match-wrap">
+      <canvas id="game"></canvas>
+
+      <div class="fish-overlay" id="view-modes">
+        <h2>消消乐</h2>
+        <p class="note">点两个相邻的格子交换 · 三个连起来就消</p>
+        <div class="mode-list" id="mode-list"></div>
+      </div>
+
+      <div class="fish-end" id="over-overlay" hidden>
+        <div class="fish-end-bg" id="over-bg"></div>
+        <div class="fish-end-card">
+          <h2 id="over-title">过关了！</h2>
+          <p class="fish-end-line" id="over-line"></p>
+          <p class="fish-end-stats" id="over-note"></p>
+          <div class="actions">
+            <button class="btn primary" id="btn-again">再来一次</button>
+            <button class="btn" id="btn-to-modes">换一关</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="legal">
+  <p>画作版权归白墙所有，不得商用、不得二次发布</p>
+  <p>非官方同人作品，与深度求索无隶属关系</p>
+</footer>
+
+<script src="../js/bubbles.js?v=20261123g"></script>
+<script src="../js/match.js?v=20261123a"></script>
+</body>
+</html>
+
+
+
+
+

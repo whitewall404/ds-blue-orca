@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>记忆翻牌 · 小虎鲸的游戏屋</title>
+<link rel="stylesheet" href="../style.css?v=20261123g">
+</head>
+<body style="--accent: var(--memory)">
+<div class="bubbles" id="bubbles"></div>
+
+<div class="game-page">
+  <div class="topbar">
+    <a class="back" href="../index.html">← 回游戏屋</a>
+    <div class="hud" id="hud">
+      <span>翻牌 <b id="hud-moves">0</b></span>
+      <span>已配对 <b id="hud-pairs">0</b>/<b id="hud-total">6</b></span>
+      <span><b id="hud-time">00:00</b></span>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="mem-wrap" id="mem-wrap">
+      <div class="mem-board" id="board"></div>
+
+      <!-- 选局 -->
+      <div class="fish-overlay" id="view-modes">
+        <h2>记忆翻牌</h2>
+        <p class="note">y 秒内记住牌面，两张一样就锁住</p>
+        <div class="mode-list" id="mode-list"></div>
+      </div>
+
+      <!-- 结算 -->
+      <div class="fish-end" id="over-overlay" hidden>
+        <div class="fish-end-bg" id="over-bg"></div>
+        <div class="fish-end-card">
+          <h2 id="over-title">全部配对了！</h2>
+          <p class="fish-end-line" id="over-line"></p>
+          <p class="fish-end-stats" id="over-note"></p>
+          <div class="actions">
+            <button class="btn primary" id="btn-again">再来一次</button>
+            <button class="btn" id="btn-to-modes">换一局</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="legal">
+  <p>画作版权归白墙所有，不得商用、不得二次发布</p>
+  <p>非官方同人作品，与深度求索无隶属关系</p>
+</footer>
+
+<script src="../js/bubbles.js?v=20261123g"></script>
+<script src="../js/memory.js?v=20261123g"></script>
+</body>
+</html>
+
+
+
+
+

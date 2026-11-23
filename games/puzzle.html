@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>拼图 · 小虎鲸的游戏屋</title>
+<link rel="stylesheet" href="../style.css?v=20261123g">
+</head>
+<body style="--accent: var(--puzzle)">
+<div class="bubbles" id="bubbles"></div>
+
+<div class="game-page">
+  <div class="topbar">
+    <a class="back" href="../index.html">← 回游戏屋</a>
+    <div class="hud" id="hud">
+      <span>第 <b id="hud-level">1</b> 关</span>
+      <span>已放 <b id="hud-placed">0/9</b></span>
+      <span><b id="hud-time">00:00</b></span>
+    </div>
+  </div>
+
+  <div class="stage">
+    <!-- 选关 -->
+    <div id="view-levels">
+      <h2>拼图</h2>
+      <p class="note">16 关 · 4 个难度 · 把块拖进盘里</p>
+      <div class="level-grid" id="level-grid"></div>
+    </div>
+
+    <!-- 拼图 -->
+    <div id="view-play" class="play-area" hidden>
+      <div class="puzzle-layout">
+        <div class="board" id="board"></div>
+        <div class="tray" id="tray"></div>
+      </div>
+      <div class="actions">
+        <button class="btn" id="btn-shuffle">重来</button>
+        <button class="btn" id="btn-levels">选关</button>
+      </div>
+    </div>
+
+    <!-- 通关 -->
+    <div id="view-win" hidden>
+      <div class="win-card">
+        <img class="win-img" id="win-img" alt="">
+        <h3>拼好了！</h3>
+        <div class="stat" id="win-stat"></div>
+        <div class="actions">
+          <button class="btn primary" id="btn-next">下一关</button>
+          <button class="btn" id="btn-again">再来一次</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="legal">
+  <p>画作版权归白墙所有，不得商用、不得二次发布</p>
+  <p>非官方同人作品，与深度求索无隶属关系</p>
+</footer>
+
+<script src="../js/bubbles.js?v=20261123g"></script>
+<script src="puzzle-levels.js?v=20261123g"></script>
+<script src="../js/puzzle.js?v=20261123g"></script>
+</body>
+</html>
+
+
+
+
+

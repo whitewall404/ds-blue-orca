@@ -1,0 +1,11 @@
+﻿# 原始素材库（206MB，游戏不用它，用的是 library-puzzle）
+library/
+
+# 临时文件
+tools/*.png
+!preview-*.png
+*.log
+
+# 系统
+Thumbs.db
+desktop.ini
