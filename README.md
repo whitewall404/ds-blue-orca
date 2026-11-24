@@ -51,6 +51,10 @@
 
 ## 跑起来
 
+**在线版（最省事，手机/电脑点开就玩）**
+
+https://whitewall404.github.io/ds-blue-orca/
+
 **桌面（Windows）**
 
 项目是纯静态的，不需要服务器。用浏览器打开 `index.html` 即可。
